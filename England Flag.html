@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <h1>The Flag Of England</h1>
+</header>
+<body style="background-color: navy;">
+    <div class="england-flag"></div>
+<style> 
+    .england-flag{
+        width: 300px;
+        height: 200px;
+        background: white;
+        position: relative;
+    }
+    .england-flag::before{
+        content:"";
+        position: absolute;
+        background: red;
+        width: 36px;
+        height: 100%;
+        background: red;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .england-flag::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 36px;
+        background: red;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+</style>
+</html>
